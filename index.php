@@ -1,3 +1,6 @@
+<?php include("autoload.php"); 
+// p(passwordKey("Bhagirath"));
+?>
 <!DOCTYPE php>
 <php>
 <head>
@@ -19,6 +22,7 @@
 		<div class="container ">
 			<div class="row">
 				<!-- Left side begins -->
+
 				<div class="col-md-6 col-xs-12" style="border-right: white solid 4px;padding-right: 50px;">
 					<div class="col-lg-12 col-md-12 banks">
 						<div class="bankrow1">ICICI</div>
