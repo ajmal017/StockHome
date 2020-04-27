@@ -20,7 +20,7 @@ if($username!="" && $pass!="")
 			setcookie("upass",$pass,time()+20);
 		}
 		$fetch=mysql_fetch_array($exe);
-		$_SESSION['ADMINID']=$fetch['reg_id'];
+		$_SESSION['USERID']=$fetch['reg_id'];
 		echo '<script>window.location="loginhome.php"</script>';
 	}
 	else

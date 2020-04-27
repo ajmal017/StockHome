@@ -17,17 +17,17 @@
     <div class="container-fluid row1">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-9 col-lg-9">
+				<div class="col-md-8 col-lg-8">
 
 				</div>
 				<div class="col-md-1 col-lg-1 log">
 					<a href="">Premium</a> 
 				</div>
-				<div class="col-md-1 col-lg-1 log">
-					<a href="changepassword.php">Change Password</a>
+				<div class="col-md-2 col-lg-2 log">
+					<a href="change_u_pass.php">Change Password</a>
 				</div>
 				<div class="col-md-1 col-lg-1 log">
-					<a href="home.php">Logout</a> 
+					<a href="index.php">Logout</a> 
 				</div>
 			</div>
 		</div>
