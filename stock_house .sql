@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 26, 2020 at 06:25 PM
+-- Generation Time: Apr 27, 2020 at 10:04 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -45,6 +45,35 @@ INSERT INTO `register` (`reg_id`, `reg_name`, `reg_email`, `reg_pass`, `reg_mno`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `stock_detail`
+--
+
+CREATE TABLE `stock_detail` (
+  `detail_id` int(11) NOT NULL,
+  `stock_id` int(11) NOT NULL,
+  `open` float NOT NULL,
+  `high` float NOT NULL,
+  `low` float NOT NULL,
+  `close` float NOT NULL,
+  `volume` float NOT NULL,
+  `delivery` float NOT NULL,
+  `date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stock_table`
+--
+
+CREATE TABLE `stock_table` (
+  `stock_id` int(11) NOT NULL,
+  `stock_name` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `userpass`
 --
 
@@ -72,6 +101,18 @@ ALTER TABLE `register`
   ADD PRIMARY KEY (`reg_id`);
 
 --
+-- Indexes for table `stock_detail`
+--
+ALTER TABLE `stock_detail`
+  ADD PRIMARY KEY (`detail_id`);
+
+--
+-- Indexes for table `stock_table`
+--
+ALTER TABLE `stock_table`
+  ADD PRIMARY KEY (`stock_id`);
+
+--
 -- Indexes for table `userpass`
 --
 ALTER TABLE `userpass`
@@ -86,6 +127,16 @@ ALTER TABLE `userpass`
 --
 ALTER TABLE `register`
   MODIFY `reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `stock_detail`
+--
+ALTER TABLE `stock_detail`
+  MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `stock_table`
+--
+ALTER TABLE `stock_table`
+  MODIFY `stock_id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `userpass`
 --
