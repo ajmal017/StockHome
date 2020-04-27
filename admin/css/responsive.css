@@ -1,0 +1,12 @@
+@media only screen and (min-width: 0px) and (max-width: 767px)
+{
+	.menu{
+		display: none;
+	}
+	.menubtn{
+		position: absolute;
+		right: 0px;
+		top: 30px;
+		display: block;
+	}
+}
