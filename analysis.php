@@ -1,3 +1,4 @@
+<!-- <?php include("connection.php"); ?> -->
 <?php include("autoload.php"); ?>
 <!DOCTYPE php>
 <php>
@@ -13,7 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 <body>
-	<?php include("header.php"); ?>
+	<?php include("header.php");
+	 // $passKey = passwordKey(); p($passKey);
+	 ?>
 
 	<div class="container-fluid row3">
 		<div class="container ">

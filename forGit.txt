@@ -1,0 +1,10 @@
+1. git status
+2. git add .
+3. git commit -m "<message>"
+4. git pull origin master
+5. if no conflict then 
+   git push origin <branch-name>
+
+  // To create a branch
+  git checkout -b "Shreya"
+

@@ -10,7 +10,6 @@ if($username!="" && $pass!="")
 	$sel="select * from register where reg_email='$username' and reg_pass='$pass'";
 	$exe=mysql_query($sel);
 	$num=mysql_num_rows($exe);
-	echo $num;
 	if($num==1)
 	{
 		$rem=$_POST['rem'];
