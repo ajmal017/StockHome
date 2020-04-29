@@ -273,7 +273,6 @@ h4{
 }
 .abr3p2
 {
-	
 	padding-top: 20px;
 	padding-bottom: 80px;
 	text-align: left;
@@ -283,6 +282,7 @@ h4{
 	border: 0px solid green;
 	float: left;
 	margin:auto;
+	box-shadow: 0px 2px 5px 1px white;
 }
 .regr3p2
 {

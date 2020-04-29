@@ -1,3 +1,4 @@
+<?php include("autoload.php"); ?>
 <!DOCTYPE php>
 <php>
 <head>
@@ -8,7 +9,6 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
