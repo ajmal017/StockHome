@@ -10,18 +10,12 @@
         - 0.5. Container
         - 0.6. Pageheader
         - 0.7. Footer
-
    ------------------------- 
-
  *  1. Dashboard
-
  *      - 1.1. TYPE ELEMENT
  *      - 1.2. TYPE ELEMENT
-
    --------------------------
-
 2. UI Elements
-
     - 2.1.  Alerts
     - 2.2.  Buttons
     - 2.3.  Cards
@@ -38,22 +32,15 @@
     - 2.14. Pagination
     - 2.15. Switch Toogle
     - 2.16. Spinner   
-
-
     ----------------------------
-
 3. Charts
-
     - 3.1.  Chartist js
     - 3.2.  Sparklines
     - 3.3.  Chart.js
     - 3.4.  Morris.js
     - 3.5.  C3 Charts.js
-
      ----------------------------
-
 4. Forms
-
     - 4.1.  Elements
     - 4.2.  Validations
     - 4.3.  Multiselect
@@ -61,24 +48,14 @@
     - 4.5.  Input Mask
     - 4.6.  Summar Note text editor
     - 4.7.  Multi Upload
-
-
      ----------------------------
-
-
 5. Tables
-
     - 5.1.  General
     - 5.2.  Data Tables
     - 5.3.  Table Filters
-
-
-
          ----------------------------
      
-
 6. Pages
-
     - 6.1.   Blank Page
     - 6.2.   Blank Page Header
     - 6.3.   Login  
@@ -92,16 +69,9 @@
     - 6.11.  Media Object
     - 6.12.  Shortable / Nestable
     - 6.13.  404 Error
-
-
-
-
-
-
          ----------------------------
      
 7. Email
-
     - 7.1.  Inbox
     - 7.2.  Email Detail
     - 7.3.  Email Compose
@@ -109,9 +79,7 @@
   
        ----------------------------
      
-
 8. Layouts
-
     - 8.1. Primary Header
     - 8.2. Success Header
     - 8.3. Warning Header
@@ -126,22 +94,14 @@
     - 8.12. Page Aside
     - 8.13. Collapsible Sidebar
     - 8.14. Sub Navigation
-
-
-
        ----------------------------
      
-
 9. Maps
-
     - 9.1.  Google Map
     - 9.2.  Vector Map
-
        ----------------------------
      
-
 10. Menu Level
-
     - 10.1.  Level 1
     - 10.2.  Level 2
    */
@@ -1848,9 +1808,9 @@ Leftsidebar - dark
 }
 
 .sidebar-dark.nav-left-sidebar .navbar-nav .nav-item .badge{
-	position: absolute;
-	right: 40px;
-	display: none;
+    position: absolute;
+    right: 40px;
+    display: none;
 }
 
 /*-----navigation dark ---*/
@@ -4601,9 +4561,7 @@ tr.group:hover {
 
 
 /* -------------------------------- 
-
 Patterns - reusable parts of our design
-
 -------------------------------- */
 
 @media only screen and (min-width:1170px) {
@@ -4614,9 +4572,7 @@ Patterns - reusable parts of our design
 
 
 /* -------------------------------- 
-
 Vertical Timeline - by CodyHouse.co
-
 -------------------------------- */
 
 .cd-timeline {
@@ -6983,3 +6939,17 @@ Media Query
 /* Custom, iPhone Retina */
 @media only screen and (max-width:320px) {} 
 
+
+.formrow{
+     border:0px red solid;
+     text-align: center;
+}
+.stockform{
+    border:0px red solid;
+}
+.stockfield{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border:1px gray solid;
+}

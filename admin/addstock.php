@@ -418,7 +418,16 @@
         <div class="dashboard-wrapper">
             <div class="dashboard-ecommerce">
                 <div class="container-fluid dashboard-content ">
-                
+                  <div class="row">
+                       <h2>Add Stock</h2>
+                  </div>
+                  <div class="row formrow">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <form method="post" class="stockform">
+                           Stock Name &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="stockname" class="stockfield">
+                        </form>
+                    </div>
+                  </div>
                 </div>
             </div>
                    

@@ -1,3 +1,37 @@
+<?php
+  error_reporting(0);
+  session_start();
+  mysql_connect('localhost','root','');
+  mysql_select_db('stock_house');
+  $username=$_POST['username'];
+  $password=$_POST['password'];
+
+  if($username!="" && $password!="")
+  { $sel="select * from admin where uname='$username' and upass='$password'";
+    $exe=mysql_query($sel);
+    $tot=mysql_num_rows($exe);
+    if($tot==1)
+    { 
+      $fetch=mysql_fetch_array($exe);
+      $_SESSION['ADMINID']=$fetch['admin_id'];
+      echo '<script>window.location="home.php"</script>';
+      $rem=$_POST['rem'];
+      if($rem==1)
+      {
+        setcookie("username",$username,time()+60);
+        setcookie("password",$password,time()+60);
+      }
+    }
+    else
+    { 
+      $msg='Invalid username or password';   
+    }
+  }
+
+
+?>
+
+
 <!DOCTYPE php>
 <php lang="en">
 <head>
@@ -32,7 +66,7 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form">
+				<form class="login100-form validate-form" method="post">
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
@@ -42,17 +76,21 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-						<input class="input100" type="text" name="username" placeholder="Username">
+						<input class="input100" type="text" name="username" placeholder="Username" value="<?php echo $_COOKIE['username']?>">
 						<span class="focus-input100" data-placeholder="&#xf207;"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input class="input100" type="password" name="password" placeholder="Password" value="<?php echo $_COOKIE['password']?>">
 						<span class="focus-input100" data-placeholder="&#xf191;"></span>
 					</div>
 
+					<font color="#C21807" class="text-warning">
+					<?php echo $msg ?></font>
+					<br><br>
+
 					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="rem">
 						<label class="label-checkbox100" for="ckb1">
 							Remember me
 						</label>

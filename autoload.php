@@ -21,7 +21,7 @@ function p($data)
 * Function to encode / generate reset password link
 ** 
 */
-function passwordKey($userName = null, $length_of_string = 60) 
+function passwordKey($userName = null, $length_of_string = 10) 
 {
 	// String of all alphanumeric character 
 	$str_result = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'; 
